@@ -9,11 +9,6 @@ from selenium import webdriver
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
 # 查找文件是否存在
 def is_file_existed(filename):
@@ -46,6 +41,15 @@ def main():
         actions_chains.move_to_element(link3)
         actions_chains.context_click(link3).perform()
         time.sleep(2)
+        # actions_chains.context_click(link3).send_keys(Keys.ARROW_DOWN)
+        # time.sleep(1)
+        # actions_chains.context_click(link3).send_keys(Keys.ARROW_DOWN)
+        # time.sleep(1)
+        # actions_chains.context_click(link3).send_keys(Keys.ARROW_DOWN)
+        # time.sleep(1)
+        # actions_chains.context_click(link3).send_keys(Keys.ARROW_DOWN)
+        # time.sleep(1)
+        # actions_chains.context_click(link3).send_keys(Keys.ENTER)
         win32api.keybd_event(40, 0, 0, 0)
         win32api.keybd_event(40, 0, win32con.KEYEVENTF_KEYUP, 0)
 

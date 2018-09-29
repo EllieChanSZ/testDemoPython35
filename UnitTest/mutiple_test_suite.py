@@ -5,14 +5,14 @@ import unittest
 from UnitTest.StringReplaceFeature import StringReplaceTestCase
 from UnitTest.StringStripFeature import StringStripTestCase
 if __name__ == "__main__":
-		#运行部分用例方式1
+		#运行部分用例方式1 - addTest
 		# StringReplaceTestSuite = unittest.TestSuite()
 		# StringReplaceTestSuite.addTest(StringReplaceTestCase("testBlank"))
 		# StringReplaceTestSuite.addTest(StringReplaceTestCase("testCommonSymbol"))
 		# StringReplaceTestRunner = unittest.TextTestRunner()
 		# StringReplaceTestRunner.run(StringReplaceTestSuite)
 
-		#运行部分用例方式2
+		#运行部分用例方式2 - addTests
 		# StringReplaceTestSuite = unittest.TestSuite()
 		# StringReplaceTestSet = [StringReplaceTestCase("testBlank"),
 		# 						StringReplaceTestCase("testBlankOrd"),
